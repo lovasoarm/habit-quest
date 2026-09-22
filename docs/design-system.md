@@ -1,4 +1,4 @@
-# Design system : Habit Quest 4.1
+# Design system — Habit Quest 4.1
 
 Habit Quest 4.1 adopte une direction éditoriale moderne inspirée des portfolios numériques contemporains : espace généreux, typographie très expressive, surfaces calmes, bordures fines, navigation sticky et mouvements discrets.
 

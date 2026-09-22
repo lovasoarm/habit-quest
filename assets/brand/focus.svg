@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Focus">
-<circle cx="48" cy="48" r="31" fill="#111"/>
-<circle cx="48" cy="48" r="13" fill="#d9ff4f"/>
-<path d="M48 8v13M48 75v13M8 48h13M75 48h13" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+<circle cx="48" cy="48" r="36" fill="#111111"/>
+<circle cx="48" cy="48" r="25" fill="none" stroke="#f3f1ea" stroke-width="3"/>
+<circle cx="48" cy="48" r="14" fill="#d9ff4f" stroke="#111111" stroke-width="4"/>
+<circle cx="48" cy="48" r="4" fill="#111111"/>
+<path d="M48 8v10M48 78v10M8 48h10M78 48h10" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+<path d="M48 8v10M8 48h10" stroke="#d9ff4f" stroke-width="3" stroke-linecap="round"/>
 </svg>

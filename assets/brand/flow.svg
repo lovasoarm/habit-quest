@@ -1,7 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 96" role="img" aria-label="Local flow">
-<path d="M15 74C46 74 52 20 91 20s45 54 78 54 31-42 36-50" fill="none" stroke="#111" stroke-width="5" stroke-linecap="round"/>
-<circle cx="15" cy="74" r="8" fill="#d9ff4f" stroke="#111" stroke-width="4"/>
-<circle cx="91" cy="20" r="8" fill="#111"/>
-<circle cx="169" cy="74" r="8" fill="#d9ff4f" stroke="#111" stroke-width="4"/>
-<path d="M202 24l7 0 0 7" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" role="img" aria-labelledby="t d">
+<title id="t">Habit Quest local flow</title>
+<desc id="d">Flux visuel reliant une action à une preuve, à la progression et à la mémoire locale.</desc>
+<rect width="960" height="250" rx="32" fill="#f6f4ef"/>
+<path d="M154 125H806" stroke="#d4d0c7" stroke-width="6" stroke-linecap="round"/>
+<path d="M305 125h48M540 125h48M775 125h30" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+<g>
+<rect x="40" y="68" width="164" height="114" rx="22" fill="#111111"/>
+<circle cx="70" cy="98" r="8" fill="#d9ff4f"/>
+<path d="M91 98h79" stroke="#f3f1ea" stroke-width="6" stroke-linecap="round"/>
+<path d="M70 132h100M70 153h64" stroke="#f3f1ea" stroke-width="5" stroke-linecap="round" opacity=".72"/>
+</g>
+<g>
+<rect x="350" y="68" width="164" height="114" rx="22" fill="#ffffff" stroke="#d4d0c7" stroke-width="2"/>
+<circle cx="382" cy="101" r="13" fill="#d9ff4f" stroke="#111111" stroke-width="4"/>
+<path d="M382 93v9l6 5" fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+<path d="M408 101h73" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+<path d="M380 134h101M380 154h69" stroke="#d2cec5" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g>
+<rect x="590" y="68" width="164" height="114" rx="22" fill="#111111"/>
+<path d="M620 148l27-31 23 18 35-44 19 8" fill="none" stroke="#d9ff4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="620" cy="148" r="6" fill="#f3f1ea"/><circle cx="705" cy="91" r="6" fill="#d9ff4f"/>
+</g>
+<g>
+<rect x="830" y="84" width="78" height="82" rx="20" fill="#d9ff4f"/>
+<path d="M852 113h34M852 130h34M852 147h22" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+<path d="M812 125h18" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+</g>
 </svg>
