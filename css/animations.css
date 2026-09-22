@@ -1,0 +1,371 @@
+/* Habit Quest : Product motion system. CSS/SVG only, no runtime animation library. */
+
+@keyframes hq-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes hq-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hq-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -9px, 0);
+  }
+}
+@keyframes hq-drift {
+  0% {
+    transform: translate3d(-2%, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2%, 2%, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(-2%, 0, 0) scale(1);
+  }
+}
+@keyframes hq-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(217, 255, 79, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(217, 255, 79, 0.08);
+  }
+}
+@keyframes hq-shine {
+  0% {
+    transform: translateX(-130%) skewX(-18deg);
+  }
+  45%,
+  100% {
+    transform: translateX(130%) skewX(-18deg);
+  }
+}
+@keyframes hq-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hq-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+}
+@keyframes hq-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.015);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes hq-modal-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+@keyframes hq-nav-in {
+  from {
+    opacity: 0;
+    transform: translateY(-7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes hq-toast-in {
+  from {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modern-shell .page {
+  animation: hq-fade-in 0.65s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.modern-shell .page-head {
+  animation: hq-fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.modern-shell .page > .grid > *,
+.modern-shell .page > .split > *,
+.modern-shell .page > .stack > * {
+  animation: hq-fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.modern-shell .page > .grid > *:nth-child(2),
+.modern-shell .page > .split > *:nth-child(2),
+.modern-shell .page > .stack > *:nth-child(2) {
+  animation-delay: 0.06s;
+}
+.modern-shell .page > .grid > *:nth-child(3),
+.modern-shell .page > .stack > *:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.modern-shell .page > .grid > *:nth-child(4),
+.modern-shell .page > .stack > *:nth-child(4) {
+  animation-delay: 0.18s;
+}
+.modern-shell .page > .grid > *:nth-child(5),
+.modern-shell .page > .stack > *:nth-child(5) {
+  animation-delay: 0.24s;
+}
+
+.modern-shell .topbar {
+  animation: hq-nav-in 0.55s cubic-bezier(0.2, 0.75, 0.2, 1) both;
+}
+.modern-shell .desktop-nav a {
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+.modern-shell .desktop-nav a:hover {
+  transform: translateY(-2px);
+}
+.modern-shell .card {
+  will-change: transform;
+  transform: translateZ(0);
+}
+.modern-shell .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.72) 45%,
+    transparent 75%
+  );
+  transform: translateX(-130%) skewX(-18deg);
+  opacity: 0;
+}
+.modern-shell .card:hover::after {
+  opacity: 1;
+  animation: hq-shine 1s ease both;
+}
+.modern-shell .hero::after {
+  content: "";
+  position: absolute;
+  width: 34vw;
+  height: 34vw;
+  max-width: 520px;
+  max-height: 520px;
+  right: -7%;
+  top: -24%;
+  border-radius: 50%;
+  border: 1px solid rgba(17, 17, 17, 0.09);
+  box-shadow:
+    0 0 0 34px rgba(17, 17, 17, 0.025),
+    0 0 0 78px rgba(17, 17, 17, 0.018);
+  animation: hq-drift 10s ease-in-out infinite;
+  pointer-events: none;
+}
+.modern-shell .avatar-orb {
+  animation:
+    hq-float 6s ease-in-out infinite,
+    hq-breathe 5s ease-in-out infinite;
+  transform-origin: center;
+}
+.modern-shell .avatar-orb__tag {
+  animation: hq-pulse 3.5s ease-in-out infinite;
+}
+.modern-shell .hero__character {
+  animation: hq-fade-up 0.95s 0.08s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.modern-shell .hero__copy {
+  animation: hq-fade-up 0.85s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.modern-shell .ribbon {
+  animation: hq-pop 0.65s 0.12s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.modern-shell .ribbon::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: hq-pulse 2.2s ease-in-out infinite;
+}
+.modern-shell .btn,
+.modern-shell button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.modern-shell .btn::after,
+.modern-shell button::after {
+  content: "";
+  position: absolute;
+  inset: -20% auto -20% -55%;
+  width: 45%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.34),
+    transparent
+  );
+  transform: skewX(-18deg);
+  transition: transform 0.45s ease;
+  z-index: -1;
+}
+.modern-shell .btn:hover::after,
+.modern-shell button:hover::after {
+  transform: translateX(330%) skewX(-18deg);
+}
+.modern-shell .btn:active,
+.modern-shell button:active {
+  transform: translateY(1px) scale(0.985) !important;
+}
+.modern-shell .progress > span {
+  position: relative;
+  overflow: hidden;
+}
+.modern-shell .progress > span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transform: translateX(-140%);
+  animation: hq-shine 1.4s 0.2s ease both;
+}
+.modern-shell .quest-card.completed,
+.modern-shell .card.completed {
+  animation: hq-pop 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.modern-shell .lantern.lit {
+  animation: hq-pulse 3s ease-in-out infinite;
+}
+.modern-shell .map-pin {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    opacity 0.22s ease;
+}
+.modern-shell .map-pin:hover {
+  transform: translateY(-5px) scale(1.05) !important;
+  box-shadow: 0 18px 40px rgba(16, 16, 16, 0.16) !important;
+}
+.modern-shell .list-item {
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+.modern-shell .list-item:hover {
+  transform: translateX(4px);
+  border-color: var(--mq-line-strong);
+}
+.modern-shell .pill {
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.modern-shell .pill:hover {
+  transform: translateY(-1px);
+}
+.modern-shell .nav-more[open] .nav-more__menu {
+  animation: hq-nav-in 0.25s ease both;
+}
+.modern-shell .modal-backdrop {
+  animation: hq-fade-in 0.2s ease both;
+}
+.modern-shell .modal {
+  animation: hq-modal-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.modern-shell .toast {
+  animation: hq-toast-in 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.modern-shell .mobile-nav {
+  animation: hq-fade-up 0.5s 0.1s ease both;
+}
+.modern-shell .mobile-nav a {
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+.modern-shell .mobile-nav a:active {
+  transform: scale(0.94);
+}
+
+@supports (animation-timeline: view()) {
+  .modern-shell .page > .card,
+  .modern-shell .page > .grid > *,
+  .modern-shell .page > .split > * {
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modern-shell .page,
+  .modern-shell .page-head,
+  .modern-shell .page > .grid > *,
+  .modern-shell .page > .split > *,
+  .modern-shell .page > .stack > *,
+  .modern-shell .topbar,
+  .modern-shell .hero__character,
+  .modern-shell .hero__copy,
+  .modern-shell .ribbon,
+  .modern-shell .mobile-nav,
+  .modern-shell .modal-backdrop,
+  .modern-shell .modal,
+  .modern-shell .toast {
+    animation: none !important;
+  }
+  .modern-shell .hero::after,
+  .modern-shell .avatar-orb,
+  .modern-shell .avatar-orb__tag,
+  .modern-shell .lantern.lit {
+    animation: none !important;
+  }
+  .modern-shell *,
+  .modern-shell *::before,
+  .modern-shell *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}

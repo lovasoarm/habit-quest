@@ -1,0 +1,14 @@
+{
+  "name": "Habit Quest",
+  "short_name": "Habit Quest",
+  "lang": "fr",
+  "start_url": "./index.html#/dashboard",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f3ee",
+  "theme_color": "#111111",
+  "description": "Système local et privé de progression personnelle, hors ligne par défaut.",
+  "icons": [
+    {"src":"assets/brand/logo.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

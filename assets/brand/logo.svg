@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="t d">
+<title id="t">Habit Quest</title><desc id="d">Marque abstraite composée d’un cercle noir, d’un point lime et d’une trajectoire blanche.</desc>
+<rect width="160" height="160" rx="42" fill="#111"/>
+<circle cx="80" cy="80" r="43" fill="none" stroke="#f3f1ea" stroke-width="6"/>
+<path d="M48 91c18-18 32-26 46-26 12 0 22 5 31 15" fill="none" stroke="#d9ff4f" stroke-width="9" stroke-linecap="round"/>
+<circle cx="120" cy="79" r="8" fill="#d9ff4f"/>
+</svg>

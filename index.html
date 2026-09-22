@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#f5f3ee" />
+    <meta name="color-scheme" content="light" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="description"
+      content="Habit Quest : système local, privé et hors ligne pour construire des habitudes durables."
+    />
+    <title>Habit Quest : Private Habit System</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/accessibility.css" />
+    <link rel="stylesheet" href="css/modern-ui.css" />
+    <link rel="icon" href="assets/brand/logo.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div id="app-root">
+      <div id="boot-fallback" class="empty boot-screen">
+        <div class="boot-screen__mark" aria-hidden="true"></div>
+        <div>
+          <span class="label">Habit Quest</span>
+          <h1>Votre rythme commence ici.</h1>
+          <p>
+            Vos données restent sur cet appareil. Aucun compte ni serveur n’est
+            nécessaire.
+          </p>
+        </div>
+      </div>
+      <div id="boot-diagnostics" class="empty boot-diagnostics">
+        <strong>Le démarrage prend un peu plus de temps.</strong>
+        <p>
+          Vous pouvez recharger la page ; l’application ne dépend d’aucun
+          service distant.
+        </p>
+      </div>
+    </div>
+    <noscript
+      ><div class="empty boot-screen">
+        <div>
+          <span class="label">Habit Quest</span>
+          <h1>JavaScript est requis.</h1>
+          <p>
+            Cette application locale interactive a besoin de JavaScript pour
+            fonctionner.
+          </p>
+        </div>
+      </div></noscript
+    >
+    <script>
+      window.__HQ_STARTED_AT__ = Date.now();
+      setTimeout(function () {
+        if (!window.__HQ_RENDERED__) {
+          var x = document.getElementById("boot-diagnostics");
+          if (x) x.style.display = "block";
+        }
+      }, 3500);
+    </script>
+    <script>
+      if ("serviceWorker" in navigator && location.protocol != "file:") {
+        navigator.serviceWorker.register("./sw.js").catch(function () {});
+      }
+    </script>
+    <script src="js/app.bundle.js"></script>
+  </body>
+</html>

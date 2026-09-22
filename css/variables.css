@@ -1,0 +1,9 @@
+:root{
+ --ink:#16151c;--night:#24213a;--night2:#312b4b;--night3:#3c3554;--cream:#f4eddc;--paper:#e8dfca;--muted:#9d98a7;
+ --wood:#8f5f3f;--wood2:#b77a4e;--stone:#6e6a74;--stone2:#9a949b;--leaf:#5e7d52;--leaf2:#7ea35e;--sky:#6f9bc2;--water:#4f8fa5;
+ --health:#6da66b;--knowledge:#6f86b9;--energy:#d98a48;--magic:#9b6ca8;--reward:#d6ae4b;--alert:#c75b58;--white:#fff9eb;
+ --panel:#302b43;--panel-2:#38344a;--border:#5d566d;--shadow:#0f0f15;--primary-border:#d2a37c;--gold-bg:#705a2a;--danger-bg:#6f3434;--danger-border:#d28d87;--success-text:#a8c779;--danger-text:#e7a09b;--hero-bg:#304053;--map-bg:#344b43;--overlay:#0b0a10;--chip-active:#5a4d2c;--timeline-border:#bcc9e4;
+ --radius:4px;--space:14px;--font-display:Georgia,serif;--font-body:system-ui,-apple-system,Segoe UI,sans-serif;
+}
+[data-theme="paper"]{--night:#e8dfca;--night2:#f4eddc;--night3:#d9cfba;--cream:#24213a;--paper:#24213a;--muted:#5d566d;--panel:#f4eddc;--panel-2:#e8dfca;--border:#9a949b;--shadow:#675e55}
+[data-contrast="high"]{--cream:#ffffff;--muted:#ffffff;--border:#ffffff;--panel:#09070f;--panel-2:#15111f;--primary-border:#ffffff;--gold-bg:#2a2200;--danger-bg:#3a1111;--danger-border:#ffffff;--success-text:#ffffff;--danger-text:#ffffff;--hero-bg:#000000;--map-bg:#000000;--overlay:#000000;--chip-active:#000000;--timeline-border:#ffffff}

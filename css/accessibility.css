@@ -1,0 +1,5 @@
+:focus-visible{outline:3px solid var(--reward);outline-offset:2px}.high-contrast{letter-spacing:.02em}@media (prefers-contrast:more){:root{--border:#fff9eb}}
+
+[data-contrast="high"] button,[data-contrast="high"] .btn{color:#fff;background:#000;border-color:#fff}[data-contrast="high"] input,[data-contrast="high"] select,[data-contrast="high"] textarea{background:#000;color:#fff;border-color:#fff}[data-contrast="high"] .pill,[data-contrast="high"] .card,[data-contrast="high"] .list-item{border-color:#fff}[data-contrast="high"] .muted,[data-contrast="high"] .label{color:#fff}
+
+[data-contrast="high"] .hero,[data-contrast="high"] .mobile-nav,[data-contrast="high"] .day-cell.on,[data-contrast="high"] .substep.done,[data-contrast="high"] .substep.done .substep-box,[data-contrast="high"] .hq-sprite{background:#000!important;color:#fff!important;border-color:#fff!important}[data-contrast="high"] .hero p,[data-contrast="high"] .hero h2,[data-contrast="high"] .hero .ribbon{color:#fff!important}[data-contrast="high"] .sprite-shadow{background:#fff!important;opacity:1}
