@@ -26,14 +26,14 @@ Une action réelle devient une preuve locale. Les preuves alimentent l’XP, les
 
 ## Pourquoi Habit Quest
 
-| | |
-|---|---|
-| **Local-first** | Pas de compte, pas de backend, pas de CDN applicatif nécessaire. |
-| **Privé** | Les données métier restent dans le stockage local du navigateur. |
-| **Offline** | `index.html` peut être ouvert directement, sans réseau. |
-| **Concret** | Habitudes, sous-étapes, quêtes, rituels, journaux et preuves forment un seul système. |
-| **Mesurable** | XP, séries, maîtrise, défis, récompenses et événements donnent un retour lisible. |
-| **Calme** | Interface éditoriale, contrastée, responsive, sans chrome pixel-art. |
+|                 |                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------- |
+| **Local-first** | Pas de compte, pas de backend, pas de CDN applicatif nécessaire.                      |
+| **Privé**       | Les données métier restent dans le stockage local du navigateur.                      |
+| **Offline**     | `index.html` peut être ouvert directement, sans réseau.                               |
+| **Concret**     | Habitudes, sous-étapes, quêtes, rituels, journaux et preuves forment un seul système. |
+| **Mesurable**   | XP, séries, maîtrise, défis, récompenses et événements donnent un retour lisible.     |
+| **Calme**       | Interface éditoriale, contrastée, responsive, sans chrome pixel-art.                  |
 
 <img src="assets/brand/product-grid.svg" width="100%" alt="Vue conceptuelle des systèmes de Habit Quest">
 
@@ -136,7 +136,7 @@ Les animations sont pensées comme des **micro-feedbacks** : apparition des vues
 
 ## Le produit en une image
 
-<img src="assets/brand/systems.svg" width="100%" alt="Habit Quest — système local de progression">
+<img src="assets/brand/systems.svg" width="100%" alt="Habit Quest : système local de progression">
 
 **Une action. Une preuve. Un rythme. Un monde qui évolue avec vous.**
 
