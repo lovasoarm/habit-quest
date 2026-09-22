@@ -12,7 +12,6 @@
   </p>
 </div>
 
-<img src="assets/brand/manifesto.svg" width="100%" alt="Build a rhythm, not a streak">
 
 ## L’idée
 
@@ -35,7 +34,6 @@ Une action réelle devient une preuve locale. Les preuves alimentent l’XP, les
 | **Mesurable**   | XP, séries, maîtrise, défis, récompenses et événements donnent un retour lisible.     |
 | **Calme**       | Interface éditoriale, contrastée, responsive, sans chrome pixel-art.                  |
 
-<img src="assets/brand/product-grid.svg" width="100%" alt="Vue conceptuelle des systèmes de Habit Quest">
 
 ## Ouverture
 
@@ -132,13 +130,6 @@ L’interface prend en compte :
 
 Les animations sont pensées comme des **micro-feedbacks** : apparition des vues, surfaces qui respirent, progression, interactions, ouverture des panneaux et confirmations. Le mode de réduction des mouvements désactive ces effets de manière significative.
 
----
-
-## Le produit en une image
-
-<img src="assets/brand/systems.svg" width="100%" alt="Habit Quest : système local de progression">
-
-**Une action. Une preuve. Un rythme. Un monde qui évolue avec vous.**
 
 ---
 
